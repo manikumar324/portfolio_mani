@@ -1,0 +1,929 @@
+                            /*-----------------------------------------NAVBAR-------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+html,body{
+    width:100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    background-color: rgb(26, 60, 60);
+}
+
+.navbar-profile-pic{
+    display: flex;
+}
+.set-navbar-image-icon{
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-left: 35px;
+    animation: nav 5s infinite;
+}
+@keyframes nav {
+    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
+    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+}
+.set-navbar-image-icon:hover{
+    box-shadow:0 0 10px aqua,0 0 40px aqua,0 0 80px aqua;
+}
+.navbar-logo{
+    font-size: 24px;
+    margin:15px;
+    font-family:sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.8s linear;
+    text-shadow: 2px 2px 2px rgb(255, 0, 183);
+}
+.navbar-logo:hover{
+    color:aqua;
+    transform: scale(1.2);
+}
+.navbar-menu ul{
+    display: flex;
+    
+}
+.navbar-menu li{
+    list-style:none;
+}
+.navbar-menu li a{
+    color:white;
+    text-decoration: none;
+    padding:16px;
+    display: block;
+    font-size: 18px;
+    font-weight:bold;
+    font-family: sans-serif;
+    transition: all 0.3s linear;
+    text-shadow: 2px 2px 2px rgb(255, 0, 183);
+}
+.navbar-menu li a:hover{
+    color:aqua;
+    background-color: rgb(30, 62, 62);
+    transform: scale(1.2);
+}
+.toggle{
+    position:absolute;
+    top:16px;
+    right:16px;
+    font-size: 20px;
+    opacity: 0;
+}
+
+                                /*------------------------------HOME-------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.home-container{
+    background-color:rgb(30, 62, 62);
+    color:white;
+    padding:50px;
+    margin-top: 50px;
+}
+.home-setting{
+    display: flex;
+    justify-content: space-between;
+
+}
+.home-head-1{
+    font-size: 40px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 3px aqua ;
+}
+.home-color{
+    position: relative;
+    color:aqua;
+    font-weight: 800;
+}
+.home-head-2{
+    font-size:40px;
+    -webkit-text-stroke: 0.3vw aqua;
+    position:relative;
+    animation:scroll 1s ease-in-out alternate infinite;
+}
+.home-color::after{
+    content:"|";
+    position: absolute;
+    right:0%;
+    color:white;
+    width:100%;
+    background-color: rgb(30, 62, 62);
+    animation: typing 1.5s steps(30) alternate infinite;
+}
+@keyframes typing {
+    100%{
+        width:0%;
+    }
+}
+@keyframes scroll{
+    0%,100%{
+        top:0px;
+
+    }
+    50%{
+        top:10px;
+    }
+}
+.home-para{
+    color:white;
+    margin-top:40px;
+    font-size: 20px;
+    /* flex-wrap: wrap;
+    width:100%; */
+}
+
+
+.home-button{
+    font-size: 15px;
+    font-family: "monserrat";
+    margin-right: 40px;
+    margin-top:20px;
+    border-radius: 10px;
+    padding:8px 18px;
+    background:transparent;
+    border:1px solid aqua;
+    transition: width 4s ease-out 5s;
+    animation: button 5s infinite;
+}
+@keyframes button {
+    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
+    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+}
+
+.btn1{
+    color:aqua;
+   
+}
+.btn1:hover{
+    background: aqua;
+    color:black;
+    box-shadow:0 0 10px aqua,0 0 40px aqua,0 0 80px aqua;
+}
+.home-social-icons{
+    display: none;
+}
+.home-image-size{
+    height:400px;
+    max-width:500px;
+    border-radius: 50%;
+    opacity:0.8;
+}
+
+.home-image-size:hover{
+    opacity:1;
+    background: transparent;
+   
+}
+.home-image-container{
+   border:1px solid aqua;
+   border-radius: 50%;
+   animation: changing 5s infinite;
+}
+@keyframes changing {
+    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
+    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+}
+
+                          /*------------------------------------ABOUT-----------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:60px 0px;
+    background-color: rgb(15, 74, 74);
+}
+.about-head{
+    font-size: 40px;
+    font-weight: 800;
+    color:white;
+    margin-bottom:30px;
+    text-shadow: 2px 2px 2px aqua;
+}
+.about-line{
+    width:250px;
+    border: 1px solid aqua;
+    margin-top: -25px;
+    margin-bottom: 30px;
+}
+.about-head-color{
+    color:aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px white;
+}
+.set-about-image{
+    /* height:170px;
+    width:140px; */
+    height: 250px;
+    width:250px;
+    border-radius: 40px;
+    border:1px solid aqua;
+    transition: all 1s;
+    margin-bottom: 20px;
+    animation: set 5s infinite;
+}
+@keyframes set {
+    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
+    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}    
+}
+.set-about-image:hover{
+    transform: scale(1.1);
+    box-shadow:0 0 10px aqua,0 0 40px aqua,0 0 80px aqua;
+}
+.about-my-name{
+    color:whitesmoke;
+    padding-top:25px;
+    padding-bottom:15px;
+    font-weight: bold;
+}
+.about-para{
+    color:whitesmoke;
+    text-align: center;
+    width:70%;
+    /* flex-wrap: wrap; */
+}
+#more{
+    display: none;
+}
+.about-button{
+    margin-top:10px;
+    padding:8px 18px;
+    border:1px solid aqua;
+    background-color: transparent;
+    color:aqua;
+    border-radius: 20px;
+    transition:all 0.8s;
+    animation: button 5s infinite;
+}
+.about-button:hover{
+    transform: scale(1.1);
+    background-color: aqua;
+    color:black;
+}
+
+                                /*---------------------------------EDUCATION----------------------------------*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.education-container{
+    background:rgb(30, 62, 62);
+    padding: 15px 0px;
+}
+.education-head{
+    color:white;
+    text-align: center;
+    padding:25px 0px;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px aqua;
+}
+.education-line{
+    width:25%;
+    margin-left: 37%;
+    border: 1px solid aqua;
+    margin-top: -20px;
+}
+.education-head-color{
+    color:aqua;
+    text-shadow: 2px 2px 2px white;
+}
+.education-side-head{
+    color:white;
+    text-align: center;
+    margin-right: 15%;
+    font-weight: 700;
+    margin-top: 30px;
+    padding:8px;    
+    text-shadow: 3px 3px 2px rgb(255, 0, 183);
+}
+.education-boxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}   
+.education-box-1{
+    border:1px solid aqua;
+    margin-bottom:15px;
+    color:aqua;
+    padding:5px 20px;
+    width:450px;
+    border-radius: 8px;
+    animation: education 5s infinite;
+}
+@keyframes education {
+    0%  {box-shadow:0 0 3px rgb(184, 43, 43),0rgb(172, 43, 43)dianred,0 rgb(161, 32, 32)dianred;}
+    25% {box-shadow:0 0 3px rgb(133, 5, 105),0 0 5px rgb(134, 5, 95),0 0 10px rgb(112, 5, 80);}
+    50% {box-shadow:0 0 3px rgb(33, 169, 124),0 0 5px rgb(25, 151, 109),0 0 10px rgb(24, 150, 108);}
+    75% {box-shadow:0 0 3px rgb(96, 26, 162),0 0 5px rrgb(94, 38, 147)0 0 10px rrgb(89, 29, 145)}
+    100%{box-shadow:0 0 3px rgb(154, 205, 50),0 0 5px rgb(154, 205, 50),0 0 10px rgb(159, 205, 50);}
+}
+.education-clg-name{
+    font-size: 20px;
+    color:white;
+    font-weight: 800;
+}
+.education-degree{
+    font-size: 13px;
+    color:white;
+    font-weight:500;
+}
+.education-box-head{
+    font-weight: 500;
+}
+.education-score{
+    color:white;
+    font-weight: 400;
+}
+
+/*------------------------------------------------------------SKILLS----------------------------------------------------------------*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.skill-container{
+    background-color: rgb(15, 74, 74);
+    padding: 10px 0px;
+    /* height:100vh; */
+}
+.skill-head{
+    text-align: center;
+    padding:20px;
+    color:white;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px aqua;
+}
+.skill-line{
+    width:250px;
+    border: 1px solid aqua;
+    /* margin-left: 40%; */
+    width:300px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: -20px;
+}
+.skill-slip{
+    color:aqua;
+    text-shadow: 2px 2px 2px white;
+}
+.skill-inner-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.skill-card-1{
+    height:200px;
+    width:200px;
+    margin:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid aqua;
+    border-radius: 30%;
+    padding: 10px;
+    margin-left: 30px;
+    animation:picker 5s infinite;
+}
+@keyframes picker {
+    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
+    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+}
+.skill-icon-size{
+    color:aqua;
+    font-size: 80px;
+    margin-bottom: 10px;
+    padding:10px;
+    background: none;
+    cursor: pointer;
+}
+.skill-icon-name{
+    font-size: 20px;
+    font-weight: 700;
+    color:white;
+}
+.skill-certificate{
+    color:aqua;
+}
+
+.skill-card-1 a:hover{
+    color:white;
+}
+.html5:hover{
+    color:orange;
+}
+.css3:hover{
+    color:blue;
+}
+.javascript:hover{
+    color:yellow;
+}
+.react:hover{
+    color:rgb(45, 195, 255);
+}
+.node:hover{
+    color:green;
+}
+.express:hover{
+    color:greenyellow;
+}
+.python:hover{
+    color:rgb(158, 158, 69);
+}
+.sql:hover{
+    color:blueviolet;
+}
+
+                                /*----------------------------------PROJECTS-----------------------------------*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+}
+.projects-container{
+    background-color: rgb(30, 62, 62);
+    /* height:100vh; */
+}
+.projects-head{
+    text-align: center;
+    padding:20px;
+    color:white;
+    font-size: 40px;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px aqua;
+}
+.project-line{
+    width:250px;
+    border: 1px solid aqua;
+    /* margin-left: 40%; */
+    width:300px;
+    margin: auto;
+    margin-top: -20px;
+}
+.project-card-1{
+    min-height:100vh;
+    width:100%;
+    background-color: rgb(30, 62, 62);
+    display: flex;
+    justify-content: space-evenly;
+    padding:20px;
+    flex-wrap: wrap;
+}
+.project-1,.project-2,.project-3,.project-4,.project-5{
+    height:350px;
+    width:320px;
+    padding:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.project-img{
+    height:250px;
+    width:300px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+    animation: project 5s infinite;
+}
+@keyframes project {
+    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
+    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+}
+.project-slip{
+    color:aqua;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px white;
+}
+
+.project-1:hover,.project-2:hover,.project-3:hover,.project-4:hover,.project-5:hover{
+    box-shadow: 5px 5px 25px  rgb(112, 193, 193);
+    border-radius: 60px;
+    border:1px solid aqua;
+}
+.project-link{
+    text-decoration: none;
+    color:aqua;
+}
+.project-link:hover{
+    text-decoration: underline;
+    color:white;
+}
+.project-name{
+    color:white;
+    font-weight: 700;
+    font-size: 19px;
+}
+
+                              /*------------------------------------CONTACT---------------------------------------*/
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:none;
+    outline:none;
+}
+.total-contact-container{
+    background: rgb(15, 74, 74);
+}
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+}
+.contacts-box{
+    margin-top: 40px;
+    width:420px;
+    border:1px solid aqua;
+    margin-bottom: 20px;
+    animation: button 5s infinite;
+}
+.contact-head{
+    color:white;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+    padding-top: 20px;
+    text-shadow: 2px 2px 2px aqua;
+}
+.contact-line{
+    width:28%;
+    border: 1px solid aqua;
+    margin-left: 36%;
+    margin-top: -5px;
+}
+.contact-head-color{
+    color:aqua;
+    text-shadow: 2px 2px 2px white;
+}
+.contact-box-1-2{
+    text-align: center;
+    padding:20px;
+}
+.input-1,.input-2{
+    padding:5px;
+    border: 1px solid aqua;
+    background: rgb(222, 225, 225);
+    margin-right: 20px;
+    width:385px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.contact-box-3-4{
+    text-align: center;
+    padding:20px;
+    margin-top: -40px;
+}
+.input-3,.input-4{
+    padding:5px;
+    border: 1px solid aqua;
+    background: rgb(222, 225, 225);
+    margin-right: 20px;
+    width:385px;
+    border-radius: 5px;
+    margin-bottom: 3px;
+}
+.contact-box-5{
+    text-align: center;
+    padding:20px;
+    margin-top: -35px;
+    
+}
+.input-5{
+    padding:5px;
+    border: 1px solid aqua;
+    background: transparent;
+    margin-top: 5px;
+    width:385px;
+    border-radius: 5px;
+    height:250px;
+    background-color: rgb(222, 225, 225);
+    
+}
+.contact-button{
+   margin-left: 40%;
+   margin-bottom:20px;
+}
+
+.icon{
+    font-size:25px;
+    color:aqua;
+}
+.icon-style{
+   
+    height:40px;
+    width:40px;
+    border-radius:20px;
+    background-color:rgb(30, 62, 62);
+    margin-right:20px;
+    padding-left: 6px;
+    padding-top: 7px;
+    padding-bottom:8px;
+    padding-right: 8px;
+    border:1px solid aqua;
+   animation: icons 5s infinite;
+}
+@keyframes icons {
+    0%  {box-shadow:0 0 3px indianred,0 0 5px rgb(160, 58, 58),0 0 10px indianred;}
+    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 3px aquamarine,0 0 5px rgb(25, 181, 129),0 0 10px aquamarine;}
+    75% {box-shadow:0 0 3px rgb(161, 97, 221),0 0 5px rgb(79, 37, 119),0 0 10px rgb(103, 59, 144);}
+    100%{box-shadow:0 0 3px rgb(144, 179, 76),0 0 5px rgb(100, 132, 35),0 0 10px rgb(114, 156, 31);}
+}
+
+.icon-style:hover{
+    color:black;
+    box-shadow:0 0 10px aqua,0 0 40px aqua,0 0 80px aqua;
+}
+.contact-img{
+    width:500px;
+    height:400px;
+    margin: 70px 30px;
+    border-radius: 20px;
+    animation: contact 5s infinite;
+}
+@keyframes contact {
+    0%  {box-shadow:0 0 5px indianred,0 0 10px indianred,0 0 15px indianred;}
+    25% {box-shadow:0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134),0 0 15px rgb(78, 78, 134);}
+    50% {box-shadow:0 0 5px aquamarine,0 0 10px aquamarine,0 0 15px aquamarine;}
+    75% {box-shadow:0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141),0 0 15px rgb(103, 62, 141);}
+    100%{box-shadow:0 0 5px yellowgreen,0 0 10px yellowgreen,0 0 15px yellowgreen;}
+}
+.footer-section{
+    background-color: rgb(183, 197, 197);
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.footer-para{
+    font-size: 20px;
+    font-weight: 600;
+} 
+.total-footer-container{
+    text-align: center;
+    background-color: rgb(183, 197, 197);
+    padding: 5px;
+}
+.move-to-top{
+    display: flex;
+    justify-content: flex-end;
+}
+.top{
+    font-size: 30px;
+    margin-left: 10px;
+}
+/*-------------------------------------- CSS PART FRO ALL PARTS ---------------------------------*/
+
+/* ----------navbar-------------- */
+@media screen and (max-width:768px){
+    .navbar-logo{
+        opacity: 0;
+    }
+    .toggle{
+        opacity: 1;
+    }
+    .navbar-menu{
+        display: none;
+        width:100%;
+    }
+    .navbar-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navbar-menu ul{
+        flex-direction: column;
+        width:100%;
+        background-color: #2f3640;
+    }
+    .navbar-menu ul li{
+        text-align: center;
+    }
+    .navbar-menu ul li a{
+        padding:12px 16px;
+    }
+    .navbar-menu.active{
+        display: flex;
+    }
+
+    /* ---------home---------------- */
+    .home-image-size{
+        display: none;
+    }
+    .home-image-container{
+        display: none;
+    }
+    .home-social-icons{
+        display: flex;
+    }
+    .home-icon{
+    font-size:25px;
+    color:aqua;
+    }
+    .home-icon-style{
+        height:40px;
+        width:40px;
+        border-radius:20px;
+        background-color:transparent;
+        margin-right:20px;
+        padding-left: 6px;
+        padding-top: 7px;
+        padding-bottom:8px;
+        padding-right: 8px;
+        border:2px solid aqua;
+        animation: icons 5s infinite;
+    }
+    .home-icon-style:hover{
+        color:black;
+        box-shadow:0 0 10px aqua,0 0 40px aqua,0 0 80px aqua;
+    }
+
+    .home-color::after{
+        content:"|";
+        position: absolute;
+        right:0%;
+        color:white;
+        width:100%;
+        background-color: rgb(30, 62, 62);
+        animation: typing 1.5s steps(30) alternate infinite;
+    }
+    @keyframes typing {
+        100%{
+            width:0%;
+        }
+    }
+    /* -------about------ */
+    .set-about-image{
+        height:200px;
+        width:170px;
+    }
+    /* --------education--------- */
+
+    .education-box-1{
+        border:1px solid aqua;
+        margin-bottom:15px;
+        color:aqua;
+        width:350px;
+        padding:5px 10px;
+        border-radius: 8px;
+    }
+    .education-line{
+        width:65%;
+        margin-left: 18%;
+        border: 1px solid aqua;
+        margin-top: -20px;
+    }
+
+    /* -------------skills----------- */
+    .skill-inner-container{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .skill-card-1{
+        height:150px;
+        width:140px;
+        margin:20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid aqua;
+        border-radius: 50%;
+        margin-left: 5px;
+    }
+    .skill-icon-size{
+        color:aqua;
+        font-size: 50px;
+        margin-bottom: 10px;
+        background: none;
+        cursor: pointer;
+    }
+    .skill-icon-name{
+        font-size: 13px;
+        font-weight: 700;
+        color:white;
+    }
+    .skill-certificate{
+        color:aqua;
+    }
+    .skill-card-1 a{
+        font-size: 12px;
+    }
+    .skill-line{
+        width:50%;
+        border: 1px solid aqua;
+        margin-left: 25%;
+        margin-top: -20px;
+    }
+
+    /* -------projects----------- */
+    .project-card-1{
+        min-height:100vh;
+        width:100%;
+        background-color: rgb(30, 62, 62);
+        display: flex;
+        justify-content: space-evenly;
+        padding:20px;
+        flex-wrap: no-wrap;
+    }
+    .project-line{
+        width:55%;
+        border: 1px solid aqua;
+        margin-left: 23%;
+        margin-top: -20px;
+    }
+
+    /* ----------contact -----------*/
+
+    .contact-box-1-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-box-3-4{
+        display: flex;
+        flex-direction: column;
+        margin-top:-40px;
+    }
+    .input-1,.input-2{
+       margin:2px 0px;
+       width:100%;
+    }
+    .input-3,.input-4{
+        margin:2px 0px;
+        width:100%;
+     }
+     .input-5{
+        width:100%;
+     }
+     .contact-button{
+        margin-left:40%;
+     }
+     .contact-img{
+        display: none;
+     }
+     .contact-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     }
+     .contacts-box{
+        margin-top: 20px;
+        margin-left: 10px;
+        width:340px;
+    }
+    .contact-line{
+        width:70%;
+        border: 1px solid aqua;
+        margin-left: 15%;
+        margin-top: -5px;
+    }
+    .total-footer-container{
+        text-align: center;
+        background-color: rgb(183, 197, 197);
+        padding: 5px;
+    }
+    .footer-para{
+        font-size: 15px;
+        font-weight: normal;
+    } 
+}
