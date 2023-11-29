@@ -30,6 +30,12 @@ if(dots.style.display === "none"){
 }
 }
 
+btnText.addEventListener('click',()=>{
+    const audio=new Audio()
+    audio.src="click.mp3"
+    audio.play()
+})
+
 //This code is for Contact section.. to get responses through G-mail
 
 const contactForm = document.getElementById("contact-form");
@@ -49,7 +55,11 @@ emailjs.init(publicKey);
 
 contactForm.addEventListener("submit",event=>{
     event.preventDefault();
-
+     setTimeout(function(){
+        const sent=new Audio()
+        sent.src="success.mp3"
+        sent.play()
+    },1000)
     submitBtn.textContent = "Sending.."
 
     const inputFields={
@@ -75,3 +85,16 @@ contactForm.addEventListener("submit",event=>{
         submitBtn.textContent="Soory !!";
     })
 })
+
+//sound effects
+const audio=new Audio();
+audio.src="click.mp3"
+
+const download=new Audio()
+download.src="download.mp3"
+
+const up=new Audio()
+up.src="go-up.mp3"
+
+const keydown=new Audio()
+keydown.src="key_sound.mp3"
