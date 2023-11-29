@@ -26,12 +26,12 @@
     <i class="fas fa-bars toggle" id="main" data-aos="flip-up" data-aos-eading="ease-in-sine" data-aos-offset="100" data-aos-duration="1200"></i>
     <div class="navbar-menu" id="main" data-aos="flip-up" data-aos-eading="ease-in-sine" data-aos-offset="100" data-aos-duration="1500">
         <ul>
-           <li><a href="#home-section" alt="#">Home</a></li>
-           <li><a href="#about-section" alt="#">About</a></li>
-           <li><a href="#education-section" alt="#">Education</a></li>
-           <li><a href="#skills-section" alt="#">Skills</a></li>
-           <li><a href="#projects-section" alt="#">projects</a></li>
-           <li><a href="#contact-section" alt="#">Contact</a></li>
+           <li><a href="#home-section" alt="#" onclick="audio.play()">Home</a></li>
+           <li><a href="#about-section" alt="#" onclick="audio.play()">About</a></li>
+           <li><a href="#education-section" alt="#" onclick="audio.play()">Education</a></li>
+           <li><a href="#skills-section" alt="#" onclick="audio.play()">Skills</a></li>
+           <li><a href="#projects-section" alt="#" onclick="audio.play()">projects</a></li>
+           <li><a href="#contact-section" alt="#" onclick="audio.play()">Contact</a></li>
         </ul>
     </div>
 </div>
@@ -49,7 +49,7 @@
                 </p>
             </div>
             <div id="main" data-aos="flip-up" data-aos-eading="ease-in-sine" data-aos-offset="100" data-aos-duration="1500">
-                <a href="Mani_Kumar_Resume.pdf" download><button class="home-button btn1"> <i class="fa-solid fa-download"></i>  Download Resume</button></a>
+                <a href="Mani_Kumar_Resume.pdf" download><button class="home-button btn1" onclick="download.play()"> <i class="fa-solid fa-download"></i>  Download Resume</button></a>
             </div>
             <div class="home-social-icons" id="main" data-aos="fade-right" data-aos-eading="ease-in-sine" data-aos-offset="100" data-aos-duration="1800">
                 <div class = "d-flex flex-row pt-5">
@@ -215,14 +215,14 @@
                </div>
                <form class="contacts-box" id="contact-form" data-aos="zoom-in" data-aos-eading="ease-in-sine" data-aos-offset="100" data-aos-duration="1800">
                     <div class="contact-box-1-2">
-                        <input type="text" placeholder="Ex : Mani" class="input-1" id="name" required>
-                        <input type="email" placeholder="Ex : xyz@gmail.com" class="input-2" id="email" required>
+                        <input type="text" placeholder="Ex : Mani" class="input-1" id="name" onkeydown="keydown.play()" required>
+                        <input type="email" placeholder="Ex : xyz@gmail.com" class="input-2" id="email" onkeydown="keydown.play()" required>
                     </div>
                     <div class="contact-box-3-4">
-                        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Phone : xxxxxxxxxx" class="input-3" id="phone" required>
+                        <input type="tel" name="phone" pattern="[0-9]{10}" placeholder="Phone : xxxxxxxxxx" class="input-3" id="phone" onkeydown="keydown.play()" required>
                     </div>
                     <div class="contact-box-5">
-                        <textarea type="textarea" placeholder="Your Message" class="input-5" id="message" required></textarea>
+                        <textarea type="textarea" placeholder="Your Message" class="input-5" id="message" onkeydown="keydown.play()" required></textarea>
                     </div>
                     <button type="submit" class=" btn btn-primary contact-button" id="submit-btn">Send  <i class="fa-solid fa-paper-plane"></i></button>
                 </form>
@@ -251,7 +251,7 @@
             </div>
             <div class="move-to-top">
                 <p>Click Here To Move Top</p>
-                <a href="#home-section" alt="#"><i class="fa-solid fa-arrows-split-up-and-left top"></i></a>
+                <a href="#home-section" alt="#" onclick="up.play()"><i class="fa-solid fa-arrows-split-up-and-left top"></i></a>
             </div>
         </div>
 
