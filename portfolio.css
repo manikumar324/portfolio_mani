@@ -164,11 +164,11 @@ html,body{
     animation: button 5s infinite;
 }
 @keyframes button {
-    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    0%  {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
     25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
-    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
-    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
-    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+    50% {box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+    75% {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    100% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
 }
 
 .btn1{
@@ -329,7 +329,7 @@ html,body{
     font-weight: 700;
     margin-top: 30px;
     padding:8px;    
-    text-shadow: 3px 3px 2px rgb(255, 0, 183);
+    text-shadow: 2px 2px 2px rgb(255, 0, 183);
 }
 .education-boxes{
     display: flex;
@@ -348,10 +348,10 @@ html,body{
 }
 @keyframes education {
     0%  {box-shadow:0 0 3px rgb(184, 43, 43),0rgb(172, 43, 43)dianred,0 rgb(161, 32, 32)dianred;}
-    25% {box-shadow:0 0 3px rgb(133, 5, 105),0 0 5px rgb(134, 5, 95),0 0 10px rgb(112, 5, 80);}
+    25% {box-shadow:0 0 3px rgb(154, 205, 50),0 0 5px rgb(154, 205, 50),0 0 10px rgb(159, 205, 50);}
     50% {box-shadow:0 0 3px rgb(33, 169, 124),0 0 5px rgb(25, 151, 109),0 0 10px rgb(24, 150, 108);}
     75% {box-shadow:0 0 3px rgb(96, 26, 162),0 0 5px rrgb(94, 38, 147)0 0 10px rrgb(89, 29, 145)}
-    100%{box-shadow:0 0 3px rgb(154, 205, 50),0 0 5px rgb(154, 205, 50),0 0 10px rgb(159, 205, 50);}
+    100%{box-shadow:0 0 3px rgb(133, 5, 105),0 0 5px rgb(134, 5, 95),0 0 10px rgb(112, 5, 80);}
 }
 .education-clg-name{
     font-size: 20px;
@@ -423,11 +423,11 @@ html,body{
     animation:picker 5s infinite;
 }
 @keyframes picker {
-    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
-    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
-    50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
-    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
-    100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+    0%   {box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
+    25%  {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    50%  {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
+    75%  {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    100% {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
 }
 .skill-icon-size{
     color:aqua;
@@ -526,10 +526,10 @@ html,body{
     animation: project 5s infinite;
 }
 @keyframes project {
-    0%  {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
+    0%  {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
     25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
     50% {box-shadow:0 0 3px aquamarine,0 0 5px aquamarine,0 0 10px aquamarine;}
-    75% {box-shadow:0 0 3px rgb(103, 62, 141),0 0 5px rgb(103, 62, 141),0 0 10px rgb(103, 62, 141);}
+    75% {box-shadow:0 0 3px indianred,0 0 5px indianred,0 0 10px indianred;}
     100%{box-shadow:0 0 3px yellowgreen,0 0 5px yellowgreen,0 0 10px yellowgreen;}
 }
 .project-slip{
@@ -665,11 +665,11 @@ html,body{
    animation: icons 5s infinite;
 }
 @keyframes icons {
-    0%  {box-shadow:0 0 3px indianred,0 0 5px rgb(160, 58, 58),0 0 10px indianred;}
-    25% {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
-    50% {box-shadow:0 0 3px aquamarine,0 0 5px rgb(25, 181, 129),0 0 10px aquamarine;}
+    0%  {box-shadow:0 0 3px rgb(78, 78, 134),0 0 5px rgb(78, 78, 134),0 0 10px rgb(78, 78, 134);}
+    25% {box-shadow:0 0 3px aquamarine,0 0 5px rgb(25, 181, 129),0 0 10px aquamarine;}
+    50% {box-shadow:0 0 3px indianred,0 0 5px rgb(160, 58, 58),0 0 10px indianred;}
     75% {box-shadow:0 0 3px rgb(161, 97, 221),0 0 5px rgb(79, 37, 119),0 0 10px rgb(103, 59, 144);}
-    100%{box-shadow:0 0 3px rgb(144, 179, 76),0 0 5px rgb(100, 132, 35),0 0 10px rgb(114, 156, 31);}
+    100%{box-shadow:0 0 3px aquamarine,0 0 5px rgb(25, 181, 129),0 0 10px aquamarine;}
 }
 
 .icon-style:hover{
