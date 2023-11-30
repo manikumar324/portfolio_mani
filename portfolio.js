@@ -78,7 +78,7 @@ contactForm.addEventListener("submit",event=>{
         console.log(error)
         alert("Something went wrong")
 
-        submitBtn.textContent="Soory !!";
+        submitBtn.textContent="Sorry !!";
     })
 })
 
