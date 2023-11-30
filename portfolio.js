@@ -55,11 +55,7 @@ emailjs.init(publicKey);
 
 contactForm.addEventListener("submit",event=>{
     event.preventDefault();
-     setTimeout(function(){
-        const sent=new Audio()
-        sent.src="success.mp3"
-        sent.play()
-    },1000)
+     
     submitBtn.textContent = "Sending.."
 
     const inputFields={
