@@ -93,4 +93,4 @@ const up=new Audio()
 up.src="go-up.mp3"
 
 const keydown=new Audio()
-keydown.src="key_sound.mp3"
+keydown.src="key_sound_new.mp3"
