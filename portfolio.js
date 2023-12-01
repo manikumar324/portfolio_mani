@@ -67,8 +67,16 @@ contactForm.addEventListener("submit",event=>{
 
     emailjs.send(serviceID,templateID,inputFields)
     .then(()=>{
-        alert("Message Sent Successfully")
-        submitBtn.textContent="Sent";
+       setTimeout(function(){
+            const sent=new Audio()
+            sent.src="success.mp3"
+            sent.play()
+        },1000)
+       
+        setTimeout(()=>{
+            alert("Message Sent Successfully")
+            submitBtn.textContent="Sent";
+        },2000)
 
         nameInput.value= "",
         emailInput.value= "",
